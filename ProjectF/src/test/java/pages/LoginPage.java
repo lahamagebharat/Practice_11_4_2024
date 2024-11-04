@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +20,9 @@ public class LoginPage {
 
 	@FindBy(id = "login-button")
 	WebElement loginbutton;
+
+	@FindBy(className = "app_logo")
+	WebElement applogo;
 
 	public void logintobrowser() {
 		username.sendKeys("standard_user");
