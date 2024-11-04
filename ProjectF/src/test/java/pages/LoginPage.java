@@ -24,6 +24,9 @@ public class LoginPage {
 	@FindBy(className = "app_logo")
 	WebElement applogo;
 
+	@FindBy(className = "product_sort_container")
+	WebElement product_sort_container_drop;
+
 	public void logintobrowser() {
 		username.sendKeys("standard_user");
 		password.sendKeys("secret_sauce");
