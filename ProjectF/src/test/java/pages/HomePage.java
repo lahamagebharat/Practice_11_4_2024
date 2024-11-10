@@ -14,4 +14,7 @@ public class HomePage {
 	@FindBy(id="tryy")
 	WebElement login;
 
+	@FindBy(id="prick")
+	WebElement check;
+
 }
